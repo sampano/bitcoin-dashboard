@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitcoin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  </head>
+  <body>
+    <nav class="container">
+      <div class=" nav-container">
+        <ul class="nav-list">
+          <li class="nav-item" ><a href="#" >Dashboard</a></li>
+          <li class="nav-item"><a href="#">Exchange</a></li>
+          <li class="nav-item"><a href="#">Watchlist</a></li>
+          <li class="nav-item"><a href="#">Calendar</a></li>
+          <li class="nav-item"><a href="#">Product</a></li>
+        </ul>
+        <ul class="nav-list">
+          <li class="nav-item nav-item-icon"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></li>
+          <li class="nav-item-icon"><input type="search" placeholder="search" class="nav-item-input"></li>
+          <li class="nav-item nav-item-icon"><i class="fa-solid fa-bell"></i></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="container">
+        <div class="coin-dashboard row">
+          <div class="coin-dashboard-info">
+            <h2 id="btc-id">Bitcoin</h2>
+            <h3 id="btc-price">$19,000</h3>
+            <p id="btc-percentage">0.1%</p>
+            <p>1.000000 BTC</p>
+            <a href="www.facebook.com" class="button coin-dashboard-button"
+              >share</a
+            >
+          </div>
+          <div class="coin-dashboard-container">
+            <ul class="coin-dashboard-list rowone-dashboard">
+              <li class="coin-dashboard-item">
+                Market Cap<span id="marketcap">$152,512,231,232</span>
+              </li>
+              <li class="coin-dashboard-item">
+                24 Hours Trading<span id="volumeUsd24Hr">$152,512,231,232</span>
+              </li>
+              <li class="coin-dashboard-item">
+                Fully Diluted Valuation<span>$404,503,512,000.00</span>
+              </li>
+            </ul>
+
+            <ul class="coin-dashboard-list rowtwo-dashboard">
+              <li class="coin-dashboard-item">
+                Circulating Supply<span>19,156,950</span>
+              </li>
+              <li class="coin-dashboard-item">
+                Total Supply<span id="supply">$152,512,231,232</span>
+              </li>
+              <li class="coin-dashboard-item">
+                Max Supply<span id="maxsupply">$152,512,231,232</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="coin-dashboard-sidebar">
+          <div class="sidebar-button-container">
+            <a href="#" class="button sidebar-button">Buy/Sell</a>
+            <a href="#" class="button sidebar-button">Long/Short</a>
+            <a href="#" class="button sidebar-button">Learn Crypto</a>
+          </div>
+          <div class="sidebar-info-main-container">
+            <div class="sidebar-mini-container">
+              <h2 id="first-coin-name">Bitcoin</h2>
+              <p id="first-coin-symbol">BTC</p>
+              <p id="first-coin-rank">#1</p>
+            </div>
+
+            <div class="sidebar-mini-container">
+              <h2 id="second-coin-name">Polygon</h2>
+              <p id="second-coin-symbol">Matic</p>
+              <p id="second-coin-rank">#16</p>
+            </div>
+
+             <div class="sidebar-mini-container">
+              <h2 id="third-coin-name">Polygon</h2>
+              <p id="third-coin-symbol">Matic</p>
+              <p id="third-coin-rank">#16</p>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    
+    <div class="container">
+      <div class="chart-button-container">
+      <a href="#" class="button" id="btnPrice">Price</a>
+      <a href="#" class="button" id="btnMarketCap">Market Cap</a>
+      <a href="#" class="button" id="btnTotalVolume">Total Volume</a>
+    </div>
+    </div>
+
+    <section class="container chart-container">
+      <div class="chart">
+        <canvas id="myChart"></canvas>
+      </div>
+      <div class="coin-statistic-sidebar">
+        <h3>BTC Price Statics</h3>
+        <ul class="coinstats-list">
+          <li class="coinstats-item">
+            Rank
+            <span id="coinstats-rank">1</span>
+          </li>
+          <li class="coinstats-item">
+            Name
+            <span id="coinstats-name">BTC</span>
+          </li>
+          <li class="coinstats-item">
+            Symbol
+            <span id="coinstats-symbol">BTC</span>
+          </li>
+          <li class="coinstats-item">
+            Supply
+            <span id="coinstats-supply">3131311</span>
+          </li>
+          <li class="coinstats-item">
+            Trading Volume
+            <span id="coinstats-trading-vol">3131311</span>
+          </li>
+          <li class="coinstats-item">
+            Price
+            <span id="coinstats-price">3131311</span>
+          </li>
+          <li class="coinstats-item">
+            Website
+            <span id="coinstats-website">https://blockchain.info/</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container crypto-coin-container">
+      <div class="coinlist-container" id="coinlist">
+        <ul class="coinlist-desc">
+          <li>Rank</li>
+          <li>Coin</li>
+          <li>Price</li>
+          <li>Volume-USD</li>
+          <li>Market Cap-USD</li>
+          <li>Percentage-24HR</li>
+          <li>VWAP-24HR</li>
+        </ul>
+      </div>
+    </section>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
