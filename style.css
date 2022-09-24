@@ -27,17 +27,17 @@
   color: #fff;
   font-weight: 500;
   font-size: 0.7rem;
-  background-color: #4162ff;
+  background-color:var(--color-subcontainer-bg-secondary);
   padding: 1.05em 1.05em;
   border-radius: 1em;
 }
 .sidebar-button {
-  background-color: #4162ff;
+  background-color: var(--color-subcontainer-bg-secondary);
   padding: 1.05em 1.05em;
   border-radius: 1em;
 }
 .coin-dashboard-button {
-  background-color: #22bdff;
+  background-color: var(--color-subcontainer-bg-tertiary);
   padding: 1.05em 1.05em;
   border-radius: 1em;
 }
@@ -51,7 +51,7 @@
 .nav-item-input {
   padding: .5em;
   border-radius: 10px;
-  border: .5px solid black;
+  border: .5px solid var(--color-subcontainer-bg-secondary);
 }
 
 .nav-list a {
@@ -65,7 +65,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background-color: #fbfdff;
+  background-color: var(--color-subcontainer-bg-primary);
 }
 
 /* -------------------NAV END------------------------ */
@@ -97,7 +97,7 @@
 }
 
 .coin-dashboard-list {
-  background-color: #f2f7ff;
+  background-color: var(--color-cotainer-bg);
   border-radius: 10px;
   padding: 0 1em;
   border-bottom: 1px solid var(-color-button-primary);
@@ -111,7 +111,7 @@
 }
 
 .coin-dashboard-info {
-  background-color: #4162ff;
+  background-color: var(--color-subcontainer-bg-secondary);
   padding: 1em;
   border-radius: 30px;
 }
@@ -139,14 +139,14 @@
   .coin-dashboard-sidebar {
     padding: 1em;
     border-radius: 20px;
-    background-color: #22bdff;
+    background-color: var(--color-subcontainer-bg-tertiary);
   }
 
 
     .sidebar-mini-container {
     margin: .2em;
     padding: 0.5em;
-    background-color: #f2f7ff;
+    background-color:var(--color-cotainer-bg);
     border-radius: 20px;
     color: var(--color-text-primary);
   }
@@ -170,7 +170,7 @@
   /* -------------DASHBOARD MAIN SIDEBAR END-------------- */
 
     .chart {
-    background-color: #fbfdff;
+    background-color: var(--color-subcontainer-bg-primary);
     border-radius: 20px;
   }
 
@@ -179,8 +179,8 @@
     .coin-statistic-sidebar {
     padding: 1em;
     border-radius: 20px;
-    background-color: #4162ff;
-    color: white;
+    background-color: var(--color-subcontainer-bg-secondary);
+    color: var(--color-text-secondary);
   }
 
 
@@ -201,7 +201,7 @@
 
 .coin-statistic-sidebar li {
   font-size: 0.85rem;
-  border-bottom: 1px solid #fbfdff;
+  border-bottom: 1px solid var( --color-text-tertiary)
 
   
 }
@@ -223,28 +223,27 @@
   .coinlist-container {
     padding: 1em;
     border-radius: 20px;
-    background-color: #fbfdff;
+    background-color: var(--color-subcontainer-bg-primary);
   }
   .coinlist-container ul {
     display: flex;
-     border-bottom: 1px solid #4162ff;
+    border-bottom: 1px solid var(--color-button-primary);
   }
 
   .coinlist-container li {
     margin-right: auto;
-    font-size: .8rem;
-
+    font-size: .4rem;
     padding: .8em;
    
   }
 
   .coinlist-desc {
-    background-color: #f2f7ff;
+    background-color: var(--color-cotainer-bg);
     border-radius: 20px;
 
   }
   .coinlist-desc li {
-    font-size: 0.8rem;
+    font-size: 0..6rem;
     font-weight: 700;
   }
 
@@ -256,6 +255,7 @@
 .container {
   width: 90%;
   margin: 0 auto;
+  background-color: var(--color-cotainer-bg);
 }
 
 
@@ -269,7 +269,6 @@
     width: 70%;
     display: flex;
     gap: 0.5rem;
-    background-color: #f2f7ff;
   }
 
   .nav-list {
@@ -354,6 +353,7 @@
 
   .coinlist-container li {
     width: 100%;
+    font-size: .8rem;
     margin: 1em;
     text-transform: capitalize;
   }
